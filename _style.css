@@ -1,0 +1,463 @@
+
+
+
+
+
+.page-title{
+    text-align: center;
+}
+
+.page-title h1{
+    color: #f9dcb1;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+@media (max-width: 750px) {
+    .page-title h1{
+        font-size: 30px;;
+    }
+}
+
+
+
+
+
+/*
+  Happy Hour
+*/
+
+.happy{
+
+}
+
+.happy .offre{
+    color: #f9dcb1;
+    font-size: 30px;
+}
+
+.happy .dots{
+    color: #f9dcb1;
+}
+
+.happy .h1 {
+    color: #d05b15;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+@media (max-width: 750px) {
+    .happy .offre{
+        font-size: 20px;
+    }
+
+    .happy .h1 {
+        font-size: 40px;
+    }
+}
+
+.happy .h1 > small{
+    color: #d05b15;
+}
+
+.happy-col {
+    text-align: center;
+}
+
+.happy-col-left {
+    padding-top: 100px;
+}
+
+
+.jour{
+    text-align: center;
+    font-size: 30px;
+    color: #935715;
+}
+
+.no-daily-special{
+    text-align: center;
+}
+
+.no-daily-special h1{
+    font-size: 50px;
+    color: #1D1E1C;
+    font-weight: bolder;
+}
+
+
+
+.daily-specials{
+    text-align: center;
+}
+
+.daily-specials h1{
+    font-size: 50px;
+    color: #f9dcb1;
+    font-weight: bolder;
+}
+
+div.daily-specials-item{
+    font-family: 'Zeyada', cursive;
+    font-size: 40px;
+}
+
+
+
+.formule{}
+
+section.formule{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.formule h2{
+    text-align: center;
+    color: #d05b15;
+    font-weight: bolder;
+}
+
+.formule h3{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #f9dcb1;
+    font-weight: bolder;
+}
+
+
+.formule .composition{
+    text-align: center;
+    color: #f9dcb1;
+}
+
+.formule .composition em{
+    color: #d05b15;
+}
+
+.formule .composition+.en{
+    font-size: 16px;
+    color: #f5f5f5 ;
+
+}
+
+@media (max-width: 970px) {
+    #petit-dej-francais{
+        border-bottom: 2px solid #d05b15;
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 970px) {
+    #petit-dej-anglais{
+        border-left: 2px solid #d05b15;
+        padding-left: 10px;
+    }
+}
+
+.brunch{}
+
+.formule .annonce {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.formule .brunch-titre{
+    font-size: 40px;
+    color: #d05b15;
+}
+
+.formule .brunch-tarif{
+    font-size: 40px;
+}
+
+.formule .brunch-horaire{
+    color: #f9dcb1;
+}
+
+.formule .brunch-horaire+.en{
+    font-size: 16px;
+    color: #f5f5f5 ;
+}
+
+
+.dejeuner{
+    text-align: center;
+}
+
+.formule .dejeuner-titre{
+    font-size: 40px;
+    color: #d05b15;
+}
+
+.formule .dejeuner-tarif{
+    font-size: 40px;
+}
+
+.formule .dejeuner-horaire{
+    text-align: center;
+    font-size: 30px;
+    color: #d05b15;
+}
+
+.formule .dejeuner-offre{
+    text-align: center;
+    font-size: 30px;
+}
+
+.formule .dejeuner-offre+.en{
+    font-size: 20px;
+}
+
+
+.canon{
+    text-align: center;
+}
+
+
+.formule .canon-titre{
+    font-size: 40px;
+    color: #d05b15;
+}
+
+.formule .canon-tarif{
+    font-size: 40px;
+}
+
+.formule .offre{
+    font-size: 40px;
+}
+
+.formule .offre > em{
+    font-style: normal;
+    font-size: 40px;
+    color: #d05b15;
+}
+
+.formule .offre.en{
+    font-size: 25px;
+}
+
+.formule .offre.en > em{
+    font-style: normal;
+    font-size: 25px;
+    color: #d05b15;
+}
+
+.formule .canon {
+    margin-top: 20px;
+}
+
+.formule .canon.composition {
+    margin-top: 20px;
+}
+
+.formule .canon.composition > em {
+    text-transform: uppercase;
+}
+
+.formule .canon.composition.en{
+    margin-top: inherit;
+}
+
+.formule .canon.composition.en > em {
+    text-transform: inherit;
+}
+
+
+
+
+
+.comptoir {
+    text-align: center;
+}
+
+.formule .comptoir{
+    margin-top: 20px;
+}
+
+.formule .comptoir .titre{
+    font-size: 40px;
+    color: #d05b15;
+}
+
+.formule .comptoir .tarif{
+    font-size: 40px;
+}
+
+.formule .comptoir .offre{
+    color: #f9dcb1;
+    text-align: center;
+    font-size: 30px;
+}
+
+.formule .comptoir .offre.en{
+    color: #f5f5f5 ;
+    font-size: 20px;
+}
+
+
+
+
+.sandwich {
+    text-align: center;
+}
+
+.formule .sandwich{
+    margin-top: 20px;
+}
+
+.formule .sandwich .condition{
+    color: #f9dcb1;
+}
+
+.formule .sandwich .titre{
+    font-size: 40px;
+    color: #d05b15;
+}
+
+.formule .sandwich .tarif{
+    font-size: 40px;
+}
+
+.formule .sandwich .offre{
+    color: #f9dcb1;
+    text-align: center;
+    font-size: 30px;
+}
+
+.formule .sandwich .offre.en{
+    color: #f5f5f5 ;
+    font-size: 20px;
+}
+
+@media (max-width: 970px) {
+    #formule-comptoir{
+        border-bottom: 2px solid #d05b15;
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 970px) {
+    #formule-comptoir{
+        border-right: 2px solid #d05b15;
+        padding-right: 10px;
+    }
+}
+
+
+
+
+.enfants{
+    text-align: center;
+}
+
+.formule .enfants .titre{
+    font-size: 40px;
+    color: #d05b15;
+}
+
+.formule .enfants .tarif{
+    font-size: 40px;
+}
+
+
+
+
+.carte{
+
+}
+
+.carte h2{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #d05b15;
+    font-weight: bolder;
+}
+
+.carte .information{
+    display: inline-block;
+    font-family: 'Hero Light', sans-serif;
+    color: #f9dcb1;
+    font-size: 14px;
+    text-align: right;
+}
+
+.carte .information-en{
+    display: inline-block;
+    font-family: 'Hero Light', sans-serif;
+    color: #f5f5f5 ;
+    font-size: 14px;
+    text-align: left;
+}
+
+.carte .legale{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.carte table{
+    width: 100%;
+}
+
+.carte td{
+    /*border: 1px solid white;*/
+}
+
+.carte td.carte-plat-cell{
+    text-align: left;;
+}
+
+.carte td.carte-quantite-cell{
+    vertical-align: middle;
+    text-align: right;
+    padding-left: 8px;
+}
+
+.carte td.carte-tarif-cell{
+    vertical-align: middle;
+    text-align: right;
+    padding-left: 8px;
+    padding-right: 15px;
+}
+
+
+.carte span.plat{
+    display: inline-block;
+    color: #d05b15;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.carte span.plat > em{
+    color: #f9dcb1;
+    font-style: normal;
+}
+
+.carte span.plat-en{
+    display: inline-block;
+    font-family: 'Hero Light', sans-serif;
+    font-size: 14px
+}
+
+.carte span.composition{
+    display: inline-block;
+    font-family: 'Hero Light', sans-serif;
+    color: #f9dcb1;
+    font-size: 14px
+}
+
+.carte span.quantite{
+    display: inline-block;
+    font-family: 'Hero Light', sans-serif;
+    color: #d05b15;
+    font-size: 18px;
+
+}
+
+.carte span.tarif{
+    display: inline-block;
+    font-size: 22px
+}
+

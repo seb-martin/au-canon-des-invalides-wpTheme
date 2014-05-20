@@ -1,0 +1,360 @@
+/*
+Theme Name: Au Canon Des Invalides
+Theme URI: http://au-canon-des-invalides.fr
+Author: Sébastien Martin <seb.martin.94@gmail.com>
+Author URI: http://www.sebmartin.fr
+Description: Thème dédié au site au-canon-des-invalides.fr
+Version: 1.0
+License: The MIT License (MIT)
+License URI: license.txt
+Tags: black, orange, dark, one-column, responsive-layout
+*/
+
+
+@import "bower_components/bootstrap/less/variables";
+@import "bower_components/bootstrap/less/mixins";
+@import "bower_components/bootstrap/less/glyphicons";
+
+
+/**
+* 1.0 Variables
+*/
+
+// Couleurs
+
+@black-color:#000000;
+@theme-color1:#d05b15;
+@theme-color2:#935715;
+@theme-color3:#f9dcb1;
+
+@grey-lighter: #f5f5f5;
+
+// Typographie
+
+@default-font-family: 'Hero', sans-serif;
+
+@smaller-fallback-font-size: 12px;
+@smaller-font-size: 1.2rem;
+@small-fallback-font-size: 16px;
+@small-font-size: 1.6rem;
+@standard-fallback-font-size: 18px;
+@standard-font-size: 1.8rem;
+@large-fallback-font-size: 30px;
+@large-font-size: 3rem;
+@hudge-fallback-font-size: 100px;
+@hudge-font-size: 10rem;
+
+
+
+
+
+/**
+* #.# Typographie
+*/
+
+@font-face {
+  font-family: Hero;
+  src: url(fonts/hero/Hero.otf);
+}
+
+@font-face {
+  font-family: Hero Light;
+  src: url(fonts/hero/Hero%20Light.otf);
+}
+
+
+
+/*
+* #.# Global
+*/
+@body-padding: 70px;
+html {
+  font-size: 62.5%;
+}
+body {
+  padding-top: @body-padding; /* Requis navbar-fixed-top http://getbootstrap.com/components/#navbar-fixed-top */
+  background-color: @black-color;
+  color: @grey-lighter ;
+  font-family: @default-font-family;
+  font-size: @standard-fallback-font-size;
+  font-size: @standard-font-size;
+}
+
+footer{
+  display: inline;
+  margin-top: 30px;
+  border-radius: 3px;
+  background-image: url("images/jumbotron.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: @theme-color2;
+}
+
+address {
+  display: inline;
+}
+
+a{
+  color: @theme-color1;
+}
+
+a:hover {
+  color: @theme-color2;
+}
+
+
+/*
+* #.# Surcharge Bootstrap
+*/
+
+// .navbar-inverse
+.navbar-inverse {
+  .navbar-nav>.active>a,
+  .navbar-nav>.active>a:hover,
+  .navbar-nav>.active>a:focus {
+    background-color: @theme-color1;
+  }
+
+  a.navbar-brand {
+    color: @theme-color2;
+  }
+
+  a:hover.navbar-brand {
+    color: @theme-color1;
+  }
+}
+
+
+
+// .brand
+
+@brand-fallback-font-size: 30px;
+@brand-font-size: 3rem;
+@brand-font-weight: bolder;
+.brand {
+  a& {
+    font-size: @brand-fallback-font-size;
+    font-size: @brand-font-size;
+    font-weight: @brand-font-weight;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 750px) {
+    a&{
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+  }
+
+
+}
+
+// .tooltip
+
+.tooltip {
+  .tooltip-inner{
+    border: @theme-color3 solid 1px;
+  }
+
+  &.right .tooltip-arrow {
+    border-right-color: @theme-color3;
+  }
+
+  &.left .tooltip-arrow {
+    border-left-color: @theme-color3;
+  }
+
+  &.top .tooltip-arrow {
+    border-top-color: @theme-color3;
+  }
+
+  &.bottom .tooltip-arrow {
+    border-bottom-color: @theme-color3;
+  }
+
+}
+
+
+
+// .jumbotron
+
+.jumbotron{
+  background-image: url("images/jumbotron.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  text-align: center;
+
+  .screen {
+    background-image: url("images/artilleurs.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .h1,
+  h1 {
+    color: @theme-color1;
+
+    & > a:hover{
+      color: @theme-color1;
+      text-decoration: underline;
+    }
+
+    @media screen and (min-width: 768px){
+      & {
+        font-size: 100px;
+        font-weight: bolder;
+      }
+    }
+
+  }
+
+  .h2,
+  h2 {
+    color: @theme-color2;
+
+    & > a {
+      color: @theme-color2;
+    }
+
+  }
+
+  .btn-default{
+    border-color: @theme-color2;
+  }
+}
+
+
+
+
+
+/*
+* #.# Alignement
+*/
+
+
+
+.left-align {
+  text-align: left;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+
+
+/*
+* #.# Boxing
+*/
+
+// border-out variables
+@border-out-width: 3px;
+@border-out-style: solid;
+@border-out-color: @theme-color1;
+@border-out-margin: 5px;
+@border-out-padding: 2px;
+
+// border-in variables
+@border-in-width: 2px;
+@border-in-style: solid;
+@border-in-color: @theme-color2;
+@border-in-padding: 10px;
+
+// left rules
+
+.border-left-out{
+  border-left: @border-out-width @border-out-style @border-out-color;
+  margin-left: @border-out-margin;
+  padding-left: @border-out-padding;
+}
+
+.border-left-in{
+  border-left: @border-in-width @border-in-style @border-in-color;
+  border-left-width: @border-in-width;
+  padding-left: @border-in-padding;
+}
+
+
+// right rules
+
+.border-right-out{
+  border-right: @border-out-width @border-out-style @border-out-color;
+  margin-right: @border-out-margin;
+  padding-right: @border-out-padding;
+}
+
+.border-right-in{
+  border-right: @border-in-width @border-in-style @border-in-color;
+  border-right-width: @border-in-width;
+  padding-right: @border-in-padding;
+}
+
+
+// top rules
+
+.border-top-out{
+  border-top: @border-out-width @border-out-style @border-out-color;
+  margin-top: @border-out-margin;
+  padding-top: @border-out-padding;
+}
+
+.border-top-in{
+  border-top: @border-in-width @border-in-style @border-in-color;
+  border-top-width: @border-in-width;
+  padding-top: @border-in-padding;
+}
+
+// bottom rules
+
+.border-bottom-out{
+  border-bottom: @border-out-width @border-out-style @border-out-color;
+  margin-bottom: @border-out-margin;
+  padding-bottom: @border-out-padding;
+}
+
+.border-bottom-in{
+  border-bottom: @border-in-width @border-in-style @border-in-color;
+  padding-bottom: @border-in-padding;
+}
+
+// union rules
+
+.border-out{
+  .border-left-out;
+  .border-right-out;
+  .border-top-out;
+  .border-bottom-out;
+}
+
+.border-in{
+  .border-left-in;
+  .border-right-in;
+  .border-top-in;
+  .border-bottom-in;
+}
+
+
+/*
+* #.# Components
+*/
+
+// .asterisk
+
+.asterisk {
+  .glyphicon;
+  .glyphicon-asterisk;
+  color: red;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+

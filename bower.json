@@ -1,0 +1,32 @@
+{
+  "name": "canon-invalides",
+  "version": "0.2.0",
+  "authors": [
+    "seb-martin <seb.martin.94@gmail.com>"
+  ],
+  "description": "theme WordPress pour le site au-canon-des-invalides.fr",
+  "main": "index.php",
+  "keywords": [
+    "wp",
+    "theme",
+    "au-canon-des-invalides",
+    "restaurant",
+    "brasserie"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.sebmartin.fr",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "~2.7.2",
+    "bootstrap": "~3.1.1",
+    "html5shiv": "~3.7.1",
+    "webshim": "~1.12.5",
+    "less": "~1.7.0"
+  }
+}
